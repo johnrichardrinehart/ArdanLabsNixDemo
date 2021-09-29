@@ -32,6 +32,7 @@
     };
 
     defaultPackage = packages.demoServer;
+    defaultApp = packages.demoServer;
 
     devShell = import ./shell.nix { inherit pkgs; };
   }

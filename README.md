@@ -26,3 +26,8 @@ chmod +x ./nix-portable
 ./nix-portable nix run github:johnrichardrinehart/ArdanLabsNixDemo
 ```
 
+Note: As of time of writing `nix` flakes are still an experimental (yet stable)
+feature. To use them it may be necessary to modify the above command to
+```bash
+./nix-portable nix run github:johnrichardrinehart/ArdanLabsNixDemo -extra-experimental-features nix-command --extra-experimental-features flakes
+```

@@ -5,8 +5,7 @@ in
 p.mkShell {
   buildInputs = [
     p.nixpkgs-fmt
-    p.go_1
-    .16
+    p.go_1_16
   ];
 
   shellHook = ''
